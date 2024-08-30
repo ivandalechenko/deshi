@@ -2,6 +2,106 @@
     margin-top: 60px;
     padding: 0px 12px;
 
+    &_run1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 150px;
+        transform: rotate(10deg);
+
+
+        @media(max-width: 500px) {
+            top: 100px;
+        }
+
+        &_el1 {
+            left: -1537px;
+        }
+
+        &_el3 {
+            left: 1537px;
+        }
+
+        &_el1,
+        &_el2,
+        &_el3 {
+            animation: mooveLine1 infinite linear 20s;
+        }
+
+
+        img {
+            filter: drop-shadow(10px 0px 10px rgba($pc, .2))
+        }
+
+        @keyframes mooveLine1 {
+            0% {
+                transform: translate(0px, 0px);
+            }
+
+            100% {
+                transform: translate(1537px, 0px);
+            }
+        }
+
+    }
+
+    &_run2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50px;
+        transform: rotate(-5deg);
+        z-index: 3;
+
+
+
+        &_el1 {
+            left: -1536px;
+        }
+
+        &_el3 {
+            left: 1536px;
+        }
+
+        &_el1,
+        &_el2,
+        &_el3 {
+            animation: mooveLine2 infinite linear 20s;
+
+        }
+
+        img {
+            filter: drop-shadow(-10px 0px 10px rgba($pc, .2))
+        }
+
+        &_el1 {
+            z-index: 2;
+        }
+
+        &_el2 {
+            z-index: 1;
+        }
+
+        &_el3 {
+            z-index: 0;
+        }
+
+
+
+        @keyframes mooveLine2 {
+            0% {
+                transform: translate(0px, 0px);
+            }
+
+            100% {
+                transform: translate(-1536px, 0px);
+            }
+        }
+
+    }
+
     &_inner {
         width: 100%;
         margin: 0 auto;
@@ -10,6 +110,9 @@
         border: 1px dashed $pc;
         border-radius: 12px;
         padding: 40px;
+        position: relative;
+        z-index: 2;
+        backdrop-filter: blur(10px);
 
         @media(max-width: 500px) {
             padding: 20px;
@@ -76,6 +179,9 @@
         font-size: 16px;
         font-weight: 800;
         border-radius: 64px;
+        transition: border 200ms, background-color 200ms, color 200ms;
+        border: 2px solid $pc;
+
 
         @media(max-width: 500px) {
             height: 44px;
@@ -91,4 +197,11 @@
         }
 
     }
+
+    &_cta:hover {
+        color: black;
+        background-color: white;
+        border: 2px solid black;
+    }
+
 }

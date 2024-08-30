@@ -66,6 +66,7 @@
         display: flex;
         flex-wrap: wrap;
         row-gap: 50px;
+        padding: 80px 30px;
 
         @media(max-width: 500px) {
             row-gap: 20px;
@@ -148,9 +149,13 @@
         font-family: 'Bebas Neue';
         border-radius: 32px;
 
+        transition: border 200ms, background-color 200ms, color 200ms;
+        border: 2px solid white;
+
         @media(max-width: 800px) {
             color: white;
             background-color: $pc;
+            border: 2px solid $pc;
         }
 
         &_wrapper {
@@ -158,6 +163,14 @@
             display: flex;
             justify-content: center;
         }
+    }
+
+    &_send:hover {
+
+        color: white;
+        cursor: pointer;
+        background-color: black;
+        border: 2px solid black;
     }
 
 }

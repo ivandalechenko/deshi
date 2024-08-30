@@ -9,12 +9,16 @@
     color: white;
     font-size: 16px;
     font-weight: 500;
+    border: 2px solid #3C3C3C;
+    transition: border 200ms, background-color 200ms, color 200ms;
 
     &_wrapper {
         width: 100;
         display: flex;
         justify-content: center;
         margin-top: 120px;
+        position: relative;
+        z-index: 2;
 
         @media(max-width: 1000px) {
             margin-top: 30px;
@@ -22,6 +26,12 @@
     }
 }
 
+.requestDemo:hover {
+    color: black;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+}
 
 .payment {
     margin-top: 300px !important;
