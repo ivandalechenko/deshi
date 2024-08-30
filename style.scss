@@ -5,6 +5,8 @@ $pc: #2161D0;
 @import 'advantages';
 @import 'section';
 @import 'payment';
+@import 'security';
+@import 'contactUs';
 
 
 
@@ -12,6 +14,7 @@ $pc: #2161D0;
     width: 100%;
     overflow: hidden;
     min-height: 100vh;
+    padding-bottom: 30px;
     background-color: white;
     // filter: invert(1);
 }

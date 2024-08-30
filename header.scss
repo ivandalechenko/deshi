@@ -5,6 +5,10 @@
     position: relative;
     top: 44px;
 
+    @media(max-width: 600px) {
+        top: 30px;
+    }
+
     &_left {
         display: flex;
         align-items: center;
@@ -18,10 +22,18 @@
         padding: 16px 32px;
         border: 1px solid #000;
         border-radius: 60px;
+
+        @media(max-width: 600px) {
+            padding: 6px 18px;
+        }
     }
 
     &_link {
         font-size: 18px;
         font-weight: 600;
+
+        @media(max-width: 600px) {
+            display: none;
+        }
     }
 }

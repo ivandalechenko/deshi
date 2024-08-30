@@ -1,4 +1,13 @@
 .hero {
+    &_decor {
+        position: relative;
+        z-index: 0;
+
+        @media(max-width: 900px) {
+            display: none;
+        }
+    }
+
     &_pedestal {
         left: -200px;
         top: 160px;
