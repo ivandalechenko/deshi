@@ -1,0 +1,41 @@
+.hero {
+    &_pedestal {
+        left: -200px;
+        top: 160px;
+    }
+
+    &_laptop {
+        left: -160px;
+        top: -20px;
+    }
+
+    &_decorText {
+        left: -100px;
+        top: -100px;
+    }
+
+    &_radCard1 {
+        left: -240px;
+        top: -200px;
+    }
+
+    &_radCard2 {
+        left: -380px;
+        top: -70px;
+    }
+
+    &_card {
+        left: -60px;
+        top: 20px;
+    }
+
+    &_radChart {
+        left: -220px;
+        top: 220px;
+    }
+
+    &_bars {
+        left: 20px;
+        top: -140px;
+    }
+}
